@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Rasterization - How Computers Render 3D Fast
+author: Alexander Kaminsky
 ---
 
 In the early days of computer graphics, performance of rendering techniques was especially important. For this reason we relied heavily on approximations of how we capture images in real life.
@@ -9,7 +10,7 @@ Rasterization is a process in 3D computer graphics that converts 3D models into 
 
 In a way, this approach is similar to how a painter would start by drawing sketch lines (the projection stage) before painting/filling them in (the rasterization stage).
 
-![](Dolphin_triangle_mesh.png)
+![]({{ site.baseurl }}/images/Dolphin_triangle_mesh.png)
 
 <p style="font-size:0.8em; text-align:center">
     A polygon mesh of a dolphin represented using triangle primitives. In the process of rasterization, triangles are drawn to the image one at a time. 

@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Ray-Tracing - How Computers Achieve Photorealism
+author: Alexander Kaminsky
 ---
 
 Ray-tracing is a technique most often used in film due to its heavy computational cost. With today's handware, full ray-tracing is usually not a feasible technique to used in real-time contexts, such as video games.
 
 The advantage of the ray-tracing technique is that it simulates light in a way that is very close to our understanding of light in the real world. Using this technique means we can directly apply our understanding of how lighting is affected by physical materials, reflections and refractions. For this reason, contexts which require photorealistic image generated use the ray-tracing technique.
 
-![](Ray_trace_diagram.svg)
+![]({{ site.baseurl }}/images/Ray_trace_diagram.svg)
 <!-- https://commons.wikimedia.org/wiki/File:Ray_trace_diagram.svg -->
 
 <p style="font-size:0.8em; text-align:center">
@@ -17,7 +18,7 @@ Diagram which shows how rays cast from the camera determine the pixel colours. H
 
 To perform ray-tracing, we divide the image into a rectangular grid of pixels. This defines the **resolution**, or quality of the image. For each pixel of the image, we send out a ray in the corresponding direction. This corresponds to the way light travels in vacuum travels in a straight line. When a ray hits an object, it calculates the color of that pixel based on factors like the material properties, light sources, and any reflections or refractions. This process is repeated **recursively** to achieve reflections and refractions. This gets us realistic rendering of effects like reflections and transparency.
 
-![](img-1.23-book1-final.jpg)
+![]({{ site.baseurl }}/images/img-1.23-book1-final.jpg)
 
 <p style="font-size:0.8em; text-align:center">
 A scene rendered by a ray-tracer. Shirley, Peter, et al. "Final Scene," <i>Ray Tracing in One Weekend</i>, July 2024, raytracing.github.io/images/img-1.23-book1-final.jpg.

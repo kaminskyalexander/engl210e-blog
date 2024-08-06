@@ -1,11 +1,12 @@
 ---
 layout: post
 title: How Do Computers Render 3D?
+author: Alexander Kaminsky
 ---
 
 3D computer generated images are everywhere: video games, film and television, engineering, research and education, and so much more. How are computers able to produce these kinds of images? In this post, I will go over the key information needed to understand what happens behind the scenes.
 
-![](animation01-1280x720.jpg)
+![]({{ site.baseurl }}/images/animation01-1280x720.jpg)
 
 <p style="font-size:0.8em; text-align:center">
     Screenshot of animation in Blender 3D Software. The images visible to the artist in the software are generated in real-time. "Home of the Blender project - Free and Open 3D Creation Software." <i>Blender</i>, https://www.blender.org/
@@ -18,7 +19,7 @@ In essence, the goal is to simulate a camera's view into a virtual 3D world, sim
 
 At first, the solution to this problem might seem straightforward. We could try to simulate the way a camera works in the real world. That is, we would use our understanding of the physical world, to simulate the emission of light from light sources in our world (for example, the sun). We can think of light, which is often modelled as particles or waves in physics, as **rays** that travel though space and bounce around. These rays have a colour associated with them, analogous to how we say that light waves have a wavelength. In the real world, eventually, some of this light reaches the camera lens creates an image inside of the camera (which can then be used by a digital sensor, or a roll of film).
 
-![](Pinhole_Camera.svg)
+![]({{ site.baseurl }}/images/Pinhole_Camera.svg)
 
 <p style="font-size:0.8em; text-align:center">
     A diagram of how the simplest type of camera&mdash;a pinhole camera&mdash;casts an image of the outside world to a two-dimensional film. Pharr, Matt, et al. "A Pinhole Camera," <i>Physically Based Rendering: From Theory to Implementation</i>, pbr-book.org/3ed-2018/Introduction/Pinhole%20Camera.svg.
@@ -56,7 +57,7 @@ Ray-traced images can take seconds to hours to compute, depending on the scene's
 
 So far, we have glossed over how we represent the objects in our scene. Typically, these are defined by **3D models**. A 3D model is a mathematical representation of an object's shape in a digital space, often composed of polygons defined by vertices (points), edges, and faces that form a mesh.
 
-![](Dolphin_triangle_mesh.png)
+![]({{ site.baseurl }}/images/Dolphin_triangle_mesh.png)
 
 <p style="font-size:0.8em; text-align:center">
     A 3D model of a dolphin. 
