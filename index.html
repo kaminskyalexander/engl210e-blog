@@ -1,0 +1,48 @@
+---
+layout: default
+title: Blog
+---
+
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .container img {
+    max-width: 200px;
+    margin-right: 20px;
+  }
+</style>
+
+<p>
+  Hello! Welcome to my computer graphics and rendering blog. Here I aim to explain some of basics that help build an
+  intuition to how computers generate the images we see.
+</p>
+
+<h1>Latest posts</h1>
+
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.excerpt }}
+  </li>
+  {% endfor %}
+</ul>
+
+<h1>About me</h1>
+
+<div class="container">
+  <img src="profile.jpg">
+
+  I'm a Computer Science student at the University of Waterloo with a passion for video games and computer graphics. My
+  experience spans industry-standard software like Unreal Engine and Houdini, where I've built tools for 3D artists and
+  worked on 2D rendering for user interfaces. I've also developed my own OpenGL renderer, combining my academic
+  background with hands-on experience in the field.
+
+  I started out in high school with game development, which helped me discover my interest in Computer Science. I'm
+  particularly fascinated by what happens behind the scenes in video games and film. When I'm away from my computer, I
+  enjoy hiking, biking, skiing, and kayaking.
+</div>
