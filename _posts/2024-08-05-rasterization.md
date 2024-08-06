@@ -4,7 +4,7 @@ title: Rasterization - How Computers Render 3D Fast
 author: Alexander Kaminsky
 ---
 
-In the early days of computer graphics, performance of rendering techniques was especially important. For this reason we relied heavily on approximations of how we capture images in real life.
+In the early days of computer graphics, performance of rendering techniques was especially important. For this reason, we relied heavily on approximations of how we capture images in real life.
 
 Rasterization is a process in 3D computer graphics that converts 3D models into a 2D image, which can be displayed on a screen. It involves taking the vertices defining the geometry of 3D objects, projecting them onto an image, and then filling in the pixels that fall within the boundaries of those projected shapes.
 
@@ -27,7 +27,7 @@ Similar to how an artist would have to shade the shapes that compose a drawing, 
 
 ## Ordering
 
-One of the challenges with rasterization is determining the correct order in which the shapes should be drawn to our image. This is analagous to how an a painter typically begins with a background and work towards the foreground.
+One of the challenges with rasterization is determining the correct order in which the shapes should be drawn to our image. This is analogous to how a painter typically begins with a background and work towards the foreground.
 
 One approach is **depth buffering**: To solve the ordering problem, a depth buffer is used. A buffer in this case is just a large block of computer memory. This buffer keeps track of the depth (distance from the camera) of each pixel. When a new pixel is processed from another shape, its depth is compared to the value already stored in the depth buffer. If the new pixel is closer to the camera, it updates the color and depth values; if not, it is discarded.
 
@@ -37,6 +37,6 @@ This problem becomes more challenging when shapes with transparency are introduc
 
 ## Further Reading
 
-If this post has interested you in building your own 3D rasterized, I personally found [_LearnOpenGL_](https://learnopengl.com/) by Joey de Vries very helpful when starting out. It goes into the specific details of building a rasterizer using OpenGL, which is a standard that allows you to take advantage of your computers graphics processing hardware.
+If this post has interested you in building your own 3D rasterized, I personally found [_LearnOpenGL_](https://learnopengl.com/) by Joey de Vries very helpful when starting out. It goes into the specific details of building a rasterizer using OpenGL, which is a standard that allows you to take advantage of your computer's graphics processing hardware.
 
-**Note:** this post has given simply an overview. There are many details that I did not fill in. Following these guides will require some prerequisite knowledge in programming; otherwise they might become difficult to follow. For complete beginners I would suggest practicing programming skills with simpler projects first!
+**Note:** this post has given simply an overview. There are many details that I did not fill in. Following the linked guide will require some prerequisite knowledge in programming. Otherwise, it might become difficult to follow. For complete beginners I would suggest practicing programming skills with simpler projects first!

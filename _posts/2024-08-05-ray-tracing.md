@@ -4,9 +4,9 @@ title: Ray-Tracing - How Computers Achieve Photorealism
 author: Alexander Kaminsky
 ---
 
-Ray-tracing is a technique most often used in film due to its heavy computational cost. With today's handware, full ray-tracing is usually not a feasible technique to used in real-time contexts, such as video games.
+Ray-tracing is a technique used to simiulate how cameras capture images. It is most often used in film due to its heavy computational cost. With today's hardware, full ray-tracing is usually not a feasible technique to use in real-time contexts, such as video games.
 
-The advantage of the ray-tracing technique is that it simulates light in a way that is very close to our understanding of light in the real world. Using this technique means we can directly apply our understanding of how lighting is affected by physical materials, reflections and refractions. For this reason, contexts which require photorealistic image generated use the ray-tracing technique.
+The advantage of the ray-tracing technique is that it simulates light in a way that is very close to our understanding of light in the real world. Using this technique means we can directly apply our understanding of how lighting is affected by physical materials, reflections and refractions. For this reason, contexts which require photorealistic images use the ray-tracing technique.
 
 ![]({{ site.baseurl }}/images/Ray_trace_diagram.svg)
 <!-- https://commons.wikimedia.org/wiki/File:Ray_trace_diagram.svg -->
@@ -40,4 +40,4 @@ As a simplified algorithm:
 
 If this post has interested you in building your own 3D ray-tracer, I personally found [_Ray Tracing in One Weekend_](https://raytracing.github.io/books/RayTracingInOneWeekend.html) by Peter Shirley, Trevor David Black, and Steve Hollasch very helpful when starting out.
 
-**Note:** this post has given simply an overview. There are many details that I did not fill in. Following these guides will require some prerequisite knowledge in programming; otherwise they might become difficult to follow. For complete beginners I would suggest practicing programming skills with simpler projects first!
+**Note:** this post has given simply an overview. There are many details that I did not fill in. Following the linked guide will require some prerequisite knowledge in programming. Otherwise, it might become difficult to follow. For complete beginners I would suggest practicing programming skills with simpler projects first!
