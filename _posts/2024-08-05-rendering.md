@@ -45,7 +45,7 @@ Instead of simulating countless rays emitted from light sources and calculating 
 
 This approach is not perfectly accurate but becomes computationally feasible.
 
-More details about this ray-tracing approach can be found in my post about how [computers achieve photorealism]({{ site.baseurl }}/{% post_url 2024-08-05-ray-tracing %}).
+More details about this ray-tracing approach can be found in my post about how [computers achieve photorealism]({{ site.baseurl }}{% post_url 2024-08-05-ray-tracing %}).
 
 Ray-traced images can take seconds to hours to compute, depending on the scene's complexity and the computational power available. For this reason, there is a distinction between online and offline renderers:
 
@@ -72,7 +72,7 @@ An alternative approach to ray-tracing is known as rasterization. This technique
 
 This method is a lot faster computationally because it avoids the complex calculations of millions of ray traces bouncing around, however, it sacrifices some of the visual qualities that we get from a more realistic simulation of light.
 
-More details about the rasterization technique can be found in my post about how [computers render 3D fast]({{ site.baseurl }}/{% post_url 2024-08-05-rasterization %}).
+More details about the rasterization technique can be found in my post about how [computers render 3D fast]({{ site.baseurl }}{% post_url 2024-08-05-rasterization %}).
 
 ---
 
